@@ -7,7 +7,6 @@ const Dropdown = () => {
       const targetId = item.getAttribute("data-target");
       const targetDropdown = document.getElementById(targetId);
 
-
       dropdownLists.forEach((list) => {
         list.style.opacity = "0";
         list.style.visibility = "hidden";
