@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <!-- !offcanvas -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li class="dropdown-item-mobile" data-target="features-dropdown-mobile">
+          <a href="#">
+            <div>Features</div>
+            <img src="../images/icon-arrow-down.svg" alt="arrow-down" />
+          </a>
+          <div class="dropdown-list-mobile" id="features-dropdown-mobile">
+            <ul>
+              <li>
+                <div>
+                  <img src="../images/icon-todo.svg" alt="todo" />
+                </div>
+                <div>Todo List</div>
+              </li>
+              <li>
+                <div>
+                  <img src="../images/icon-calendar.svg" alt="calendar" />
+                </div>
+                <div>Calendar</div>
+              </li>
+              <li>
+                <div>
+                  <img src="../images/icon-reminders.svg" alt="reminder" />
+                </div>
+                <div>Reminders</div>
+              </li>
+              <li>
+                <div>
+                  <img src="../images/icon-planning.svg" alt="planning" />
+                </div>
+                <div>Planning</div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="dropdown-item-mobile" data-target="company-dropdown-mobile">
+          <a href="#">
+            <div>Company</div>
+            <img src="../images/icon-arrow-down.svg" alt="arrow-down" />
+          </a>
+          <div class="dropdown-list-mobile" id="company-dropdown-mobile">
+            <ul>
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="mobile-buttons">
+        <button id="login">Login</button>
+        <button id="register">Register</button>
+      </div>
+      <div class="close-mobile-menu" id="close-mobile">
+        <img src="../images/icon-close-menu.svg" alt="close-menu" />
+      </div>
+    </div>
+    <!-- ! offcanvas -->
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-left">
+            <div class="logo">
+              <img src="../images/logo.svg" alt="logo" />
+            </div>
+            <ul>
+              <li class="dropdown-item" data-target="features-dropdown">
+                <a href="#">
+                  <div>Features</div>
+                  <img src="../images/icon-arrow-down.svg" alt="arrow-down" />
+                </a>
+                <div class="dropdown-list" id="features-dropdown">
+                  <ul>
+                    <li>
+                      <div>
+                        <img src="../images/icon-todo.svg" alt="todo" />
+                      </div>
+                      <div>Todo List</div>
+                    </li>
+                    <li>
+                      <div>
+                        <img src="../images/icon-calendar.svg" alt="calendar" />
+                      </div>
+                      <div>Calendar</div>
+                    </li>
+                    <li>
+                      <div>
+                        <img
+                          src="../images/icon-reminders.svg"
+                          alt="reminder"
+                        />
+                      </div>
+                      <div>Reminders</div>
+                    </li>
+                    <li>
+                      <div>
+                        <img src="../images/icon-planning.svg" alt="planning" />
+                      </div>
+                      <div>Planning</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown-item" data-target="company-dropdown">
+                <a href="#">
+                  <div>Company</div>
+                  <img src="../images/icon-arrow-down.svg" alt="arrow-down" />
+                </a>
+                <div class="dropdown-list" id="company-dropdown">
+                  <ul>
+                    <li>History</li>
+                    <li>Our Team</li>
+                    <li>Blog</li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div class="header-right">
+            <button id="login">Login</button>
+            <button id="register">Register</button>
+          </div>
+          <div class="mobile" id="open-mobile">
+            <img src="../images/icon-menu.svg" alt="mobile-menu" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-left">
+            <h1>Make remote work</h1>
+            <p>
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button>Learn more</button>
+            <div class="brands">
+              <img src="../images/client-databiz.svg" alt="" />
+              <img src="../images/client-audiophile.svg" alt="" />
+              <img src="../images/client-meet.svg" alt="" />
+              <img src="../images/client-maker.svg" alt="" />
+            </div>
+          </div>
+          <div class="hero-right">
+            <img
+              src="../images/image-hero-desktop.png"
+              alt="hero-desktop"
+              class="hero-desktop"
+            />
+            <img
+              src="../images/image-hero-mobile.png"
+              alt="hero-mobile"
+              class="hero-mobile"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./javascript/index.js" type="module"></script>
+  </body>
+</html>
