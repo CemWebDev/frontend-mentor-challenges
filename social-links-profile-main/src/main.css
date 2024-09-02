@@ -19,6 +19,8 @@ body {
   font-family: "Inter", sans-serif;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
   background-color: var(--grey-900);
@@ -84,4 +86,17 @@ a {
 .social-buttons a:hover {
   background-color: var(--green);
   color: var(--grey-900);
+}
+
+.attribution {
+  font-size: 14px;
+}
+
+#my-link {
+  background: linear-gradient(45deg, var(--green), var(--white));
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
 }
