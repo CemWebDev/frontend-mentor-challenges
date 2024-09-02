@@ -94,7 +94,6 @@ a {
 
 #my-link {
   background: linear-gradient(45deg, var(--green), var(--white));
-
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
