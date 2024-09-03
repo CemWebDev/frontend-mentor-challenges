@@ -279,6 +279,15 @@ button {
   width: 100%;
 }
 
+.attribution {
+  font-size: 0.8125rem;
+  margin-bottom: 0.75rem;
+}
+
+#my-link {
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 56.25rem) {
   .header-right,
   .header-left > ul {
