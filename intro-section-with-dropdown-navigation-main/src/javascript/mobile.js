@@ -31,28 +31,12 @@ const DropdownMobile = () => {
 
   dropdownItems.forEach((item) => {
     item.addEventListener("click", () => {
-      console.log("hello");
-
       const targetId = item.getAttribute("data-target");
-
-      console.log(targetId);
-
       const targetDropdown = document.getElementById(targetId);
-
-      console.log(targetDropdown);
-      
-      
-/*       const targetDropdown = document.getElementById(targetId);
-
-      dropdownLists.forEach((list) => {
-        list.style.display = "none";
-      });
-
-      if (targetDropdown.style.display !== "none") {
-        targetDropdown.classList.add("visible");
-      } else {
-        targetDropdown.classList.remove("visible");
-      } */
+      if ((targetDropdown.style.display = "flex")) {
+        targetDropdown.style.display = "none";
+      }
+      targetDropdown.style.display = "flex";
     });
   });
 };
