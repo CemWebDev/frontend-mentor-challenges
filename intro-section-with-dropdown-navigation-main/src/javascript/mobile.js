@@ -26,17 +26,19 @@ const ToggleMobileMenu = () => {
 };
 
 const DropdownMobile = () => {
-  const dropdownLists = document.querySelectorAll(".dropdown-list-mobile");
   const dropdownItems = document.querySelectorAll(".dropdown-item-mobile");
 
   dropdownItems.forEach((item) => {
     item.addEventListener("click", () => {
       const targetId = item.getAttribute("data-target");
       const targetDropdown = document.getElementById(targetId);
-      if ((targetDropdown.style.display = "flex")) {
-        targetDropdown.style.display = "none";
+      if (targetDropdown.classList.contains("hidden")) {
+        targetDropdown.classList.remove("hidden");
+        targetDropdown.classList.add("visible");
+      } else {
+        targetDropdown.classList.add("hidden");
+        targetDropdown.classList.remove("visible");
       }
-      targetDropdown.style.display = "flex"
     });
   });
 };
