@@ -70,9 +70,13 @@ button {
   visibility: hidden;
 }
 
-.overlay.active {
+.active {
   opacity: 1;
   visibility: visible;
+}
+
+.visible {
+  display: block;
 }
 
 .container {
@@ -249,6 +253,7 @@ button {
 }
 
 .dropdown-list-mobile {
+  display: none;
   margin-top: 1rem;
   margin-left: 1rem;
 }
