@@ -74,7 +74,10 @@ button {
   opacity: 1;
   visibility: visible;
 }
-
+.non-active {
+  opacity: 0;
+  visibility: hidden;
+}
 .visible {
   display: block;
 }
@@ -124,8 +127,6 @@ button {
   border-radius: 0.75rem;
   top: 100%;
   font-size: 14px;
-  opacity: 0;
-  visibility: hidden;
 }
 .dropdown-list ul {
   display: flex;

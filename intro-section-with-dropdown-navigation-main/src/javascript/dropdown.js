@@ -1,4 +1,4 @@
-const Dropdown = () => {
+/* const Dropdown = () => {
   const dropdownItems = document.querySelectorAll(".dropdown-item");
   const dropdownLists = document.querySelectorAll(".dropdown-list");
 
@@ -19,6 +19,19 @@ const Dropdown = () => {
         targetDropdown.style.opacity = "0";
         targetDropdown.style.visibility = "hidden";
       }
+    });
+  });
+};
+ */
+
+const Dropdown = () => {
+  const dropdownItems = document.querySelectorAll(".dropdown-item");
+  dropdownItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      const targetId = item.getAttribute("data-target");
+      const targetDropdown = document.getElementById(targetId);
+      
+      
     });
   });
 };
