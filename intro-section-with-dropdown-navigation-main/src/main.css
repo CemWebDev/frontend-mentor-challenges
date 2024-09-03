@@ -76,7 +76,10 @@ button {
 }
 
 .visible {
-  display: block;
+  display: flex;
+}
+.hidden {
+  display: none;
 }
 
 .container {
@@ -253,7 +256,6 @@ button {
 }
 
 .dropdown-list-mobile {
-  display: none;
   margin-top: 1rem;
   margin-left: 1rem;
 }

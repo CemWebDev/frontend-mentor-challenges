@@ -36,7 +36,7 @@ const DropdownMobile = () => {
       if ((targetDropdown.style.display = "flex")) {
         targetDropdown.style.display = "none";
       }
-      targetDropdown.style.display = "flex";
+      targetDropdown.style.display = "flex"
     });
   });
 };
