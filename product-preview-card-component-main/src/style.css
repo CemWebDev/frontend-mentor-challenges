@@ -144,6 +144,7 @@ img {
 }
 
 .attribution {
+  text-align: center;
   font-size: .875rem;
   font-family: var(--font2);
 }
