@@ -7,10 +7,9 @@ const Dropdown = () => {
       if (targetDropdown.classList.contains("non-active")) {
         targetDropdown.classList.add("active");
         targetDropdown.classList.remove("non-active");
-      }
-      else {
-        targetDropdown.classList.add("non-active")
-        targetDropdown.classList.remove("active")
+      } else {
+        targetDropdown.classList.add("non-active");
+        targetDropdown.classList.remove("active");
       }
     });
   });
