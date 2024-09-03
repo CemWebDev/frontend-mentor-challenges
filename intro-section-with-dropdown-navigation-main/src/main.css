@@ -99,10 +99,6 @@ button {
   gap: 1.75rem;
 }
 
-.dropdown {
-  position: relative;
-}
-
 .dropdown-item {
   position: relative;
 }
