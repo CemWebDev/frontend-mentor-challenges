@@ -38,6 +38,13 @@ img {
   border-radius: 1rem;
 }
 
+.separator {
+  width: 100%;
+  background-color: var(--soft-blue);
+  height: 1px;
+  margin: 0.75rem 0;
+}
+
 .image {
   position: relative;
   cursor: pointer;
@@ -127,4 +134,23 @@ img {
 
 .card-content img {
   max-width: 1rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 400;
+  color: var(--white);
+  font-size: 14px;
+}
+
+.profile span {
+  color: var(--soft-blue);
+}
+
+.profile img {
+  max-width: 2.5rem;
+  border: 2px solid var(--white);
+  border-radius: 100%;
 }
