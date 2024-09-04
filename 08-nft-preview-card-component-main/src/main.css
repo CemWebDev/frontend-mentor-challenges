@@ -41,9 +41,9 @@ img {
 
 .separator {
   width: 100%;
-  background-color: var(--soft-blue);
+  background-color: var(--very-dark-blue-line);
   height: 1px;
-  margin: 0.75rem 0;
+  margin: 1rem 0;
 }
 
 .image {
