@@ -19,7 +19,7 @@ body {
   font-family: "Outfit", sans-serif;
   min-height: 100vh;
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -29,6 +29,10 @@ body {
 img {
   width: 100%;
   display: flex;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -163,4 +167,9 @@ img {
 
 .profile strong:hover {
   color: var(--cyan);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.875rem;
 }
