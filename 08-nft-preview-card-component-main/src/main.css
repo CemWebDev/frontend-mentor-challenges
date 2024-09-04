@@ -173,3 +173,11 @@ a {
   text-align: center;
   font-size: 0.875rem;
 }
+
+#my-link {
+  background: linear-gradient(135deg, var(--cyan), var(--white));
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 600;
+  color: transparent;
+}
