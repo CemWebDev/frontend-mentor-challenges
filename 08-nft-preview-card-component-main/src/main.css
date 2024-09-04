@@ -13,7 +13,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.3s ease all;
 }
 
 body {
@@ -51,9 +50,8 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--cyan);
-  opacity: 0.6;
   border-radius: 0.75rem;
+  transition: background-color .3s ease;
 }
 
 .image > img:not(.hover-image) {
@@ -62,8 +60,22 @@ img {
 
 .hover-image {
   position: absolute;
+  z-index: 10;
   max-width: 50px;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3 ease all;
+}
+
+.image:hover::after {
+  background-color: var(--cyan);
+  opacity: 0.6;
+}
+
+.image:hover .hover-image {
+  opacity: 1;
+  visibility: visible;
 }
