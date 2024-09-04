@@ -36,6 +36,7 @@ img {
   background-color: var(--very-dark-blue-card);
   padding: 1.5rem 1rem;
   border-radius: 1rem;
+  box-shadow: 0px 8px 12px var(--very-dark-blue-card);
 }
 
 .separator {
@@ -101,6 +102,10 @@ img {
   font-size: 1.75rem;
 }
 
+.card-content h1:hover {
+  color: var(--cyan);
+}
+
 .card-content p {
   font-weight: 300;
   color: var(--soft-blue);
@@ -153,4 +158,8 @@ img {
   max-width: 2.5rem;
   border: 2px solid var(--white);
   border-radius: 100%;
+}
+
+.profile strong:hover {
+  color: var(--cyan);
 }
