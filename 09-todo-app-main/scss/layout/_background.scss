@@ -1,0 +1,23 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../utils/functions";
+.background {
+  position: relative;
+  &__content {
+    max-width: 500px;
+    width: 100%;
+    @include flexbox(center, space-between, null, null);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      font-family: $font-primary;
+      font-weight: $font-weight-bold;
+      color: theme-color($light-theme-colors, "background");
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+}

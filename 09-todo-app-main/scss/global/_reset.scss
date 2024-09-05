@@ -18,3 +18,8 @@ input {
   border: $reset;
   outline: $reset;
 }
+
+img {
+  width: 100%;
+  display: flex;
+}
