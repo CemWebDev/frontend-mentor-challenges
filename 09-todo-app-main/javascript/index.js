@@ -5,22 +5,22 @@ if (localStorage.getItem("theme") === null) {
   localStorage.setItem("theme", "sun");
 }
 
-
 const themeIcon = document.querySelector("#theme-icon");
 const themeBackground = document.querySelector("#theme-background");
-const todoInput = document.querySelector("#todo-input");
+
+const body = document.body;
 
 const applyTheme = () => {
   if (isSun) {
     themeIcon.src = "./images/icon-sun.svg";
     themeBackground.src = "./images/bg-desktop-dark.jpg";
-    todoInput.classList.remove("dark");
-    todoInput.classList.add("light");
+    body.classList.remove("dark");
+    body.classList.add("light");
   } else {
     themeIcon.src = "./images/icon-moon.svg";
     themeBackground.src = "./images/bg-desktop-light.jpg";
-    todoInput.classList.remove("light");
-    todoInput.classList.add("dark");
+    body.classList.remove("light");
+    body.classList.add("dark");
   }
 };
 
@@ -29,14 +29,14 @@ themeIcon.addEventListener("click", () => {
   if (isSun) {
     themeIcon.src = "./images/icon-sun.svg";
     themeBackground.src = "./images/bg-desktop-dark.jpg";
-    todoInput.classList.remove("dark");
-    todoInput.classList.add("light");
+    body.classList.remove("dark");
+    body.classList.add("light");
     localStorage.setItem("theme", "sun");
   } else {
     themeIcon.src = "./images/icon-moon.svg";
     themeBackground.src = "./images/bg-desktop-light.jpg";
-    todoInput.classList.remove("light");
-    todoInput.classList.add("dark");
+    body.classList.remove("light");
+    body.classList.add("dark");
     localStorage.setItem("theme", "moon");
   }
 });

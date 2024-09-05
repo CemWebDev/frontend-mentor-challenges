@@ -7,12 +7,48 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
+input {
+  border: $reset;
+  outline: $reset;
+  background: transparent;
+  line-height: 1.8;
+  padding: 0.75rem 1.25rem;
+  border-radius: $border-radius-primary;
 }
 
-li {
-  list-style: none;
+body {
+  background-color: theme-color($light-theme-colors, "background");
+
+  &.dark {
+    background-color: theme-color($dark-theme-colors, "background");
+
+    input {
+      background-color: theme-color(
+        $dark-theme-colors,
+        "very-dark-desaturated-blue"
+      );
+      color: theme-color($dark-theme-colors, "light-grayish-blue");
+    }
+  }
+
+  &.light {
+    input {
+      background-color: theme-color(
+        $light-theme-colors,
+        "very-light-grayish-blue"
+      );
+      color: theme-color($light-theme-colors, "very-dark-grayish-blue");
+    }
+  }
+}
+
+/* body {
+  &.dark {
+    background-color: theme-color($dark-theme-colors, "background");
+  }
+  &.light {
+    background-color: theme-color($light-theme-colors, "background");
+  }
 }
 
 input {
@@ -23,16 +59,21 @@ input {
   padding: 0.75rem 1.25rem;
   border-radius: $border-radius-primary;
   &.dark {
-    background-color: theme-color(
-      $dark-theme-colors,
-      "background"
-    );
+    background-color: theme-color($dark-theme-colors, "background");
     color: theme-color($dark-theme-colors, "light-grayish-blue");
   }
   &.light {
     background-color: theme-color($light-theme-colors, "background");
     color: theme-color($light-theme-colors, "very-dark-grayish-blue");
   }
+}
+ */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 img {
