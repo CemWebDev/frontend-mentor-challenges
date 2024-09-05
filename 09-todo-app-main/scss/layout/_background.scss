@@ -16,8 +16,6 @@
     width: 100%;
     @include flexbox(center, space-between, null, null);
     h1 {
-      font-family: $font-primary;
-      font-weight: $font-weight-bold;
       color: theme-color($light-theme-colors, "background");
     }
     img {

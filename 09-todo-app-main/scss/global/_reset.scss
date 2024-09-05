@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/functions";
 
 * {
   margin: $reset;
@@ -17,6 +18,14 @@ li {
 input {
   border: $reset;
   outline: $reset;
+  background: transparent;
+  line-height: 1.8;
+  padding: .75rem 1.25rem;
+  border-radius: 6px;
+  &.dark {
+    background-color: theme-color($dark-theme-colors, "very-dark-desaturated-blue");
+    color: theme-color($dark-theme-colors, "light-grayish-blue");
+  }
 }
 
 img {
