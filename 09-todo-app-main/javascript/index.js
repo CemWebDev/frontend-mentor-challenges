@@ -11,6 +11,5 @@ themeIcon.addEventListener("click", () => {
     themeIcon.src = "./images/icon-sun.svg";
     themeBackground.src = "./images/bg-desktop-dark.jpg"
   }
-
   isSun = !isSun;
 });
