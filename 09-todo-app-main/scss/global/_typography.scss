@@ -1,8 +1,5 @@
 @import "../utils/variables";
 
-body {
+* {
   font-family: $font-primary;
-  h1 {
-    font-weight: $font-weight-bold;
-  }
 }
