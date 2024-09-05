@@ -25,12 +25,13 @@ input {
   &.dark {
     background-color: theme-color(
       $dark-theme-colors,
-      "very-dark-desaturated-blue"
+      "background"
     );
-    color: theme-color($dark-theme-colors, "background");
+    color: theme-color($dark-theme-colors, "light-grayish-blue");
   }
   &.light {
     background-color: theme-color($light-theme-colors, "background");
+    color: theme-color($light-theme-colors, "very-dark-grayish-blue");
   }
 }
 
