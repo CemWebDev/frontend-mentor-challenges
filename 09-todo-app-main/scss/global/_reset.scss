@@ -1,0 +1,20 @@
+@import "../utils/variables";
+
+* {
+  margin: $reset;
+  padding: $reset;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: $reset;
+  outline: $reset;
+}
