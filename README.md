@@ -11,4 +11,4 @@
 | [7) Product Preview Card](https://66d75dbcafb800a1081e3a43--eloquent-dusk-7e9384.netlify.app/)                           | Easy       |
 | [8) NFT Preview Card](https://66d8af18fe09141ea450f13c--beamish-pika-0dc3cd.netlify.app/)                                | Easy       |
 | [9) Interactive Rating Component](https://66da9f9490eba41718bcd4bb--mellow-souffle-bc42db.netlify.app/)                  | Easy       |
-| [10) Advice Generator](https://react-api-deploy.vercel.app/)                                                             | Easy       |
+| [10) Advice Generator](https://react-api-deploy.vercel.app/)                                                             | Junior       |
